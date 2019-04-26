@@ -21,7 +21,6 @@ After a bit of preprocessing, these piano rolls served as input to the network.
 **2. Network Architecture**
 
 Autoencoder with the same structure as https://github.com/HackerPoet/Composer/blob/master/train.py</br>
-
 Less nodes in each layer as well as a smaller latent space.
 
 
