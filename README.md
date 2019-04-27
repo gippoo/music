@@ -15,7 +15,7 @@ Downloaded a bunch of midi files from the following games:</br>
 -Chrono Cross</br>
 -Breath of Fire 3</br>
 -Ocarina of Time</br>
-221 songs total</br>
+187 songs total</br>
 
 Used pypianoroll (https://salu133445.github.io/pypianoroll/index.html) to convert midis into a piano roll matrix.</br>
 After a bit of preprocessing, these piano rolls served as input to the network.
