@@ -40,5 +40,5 @@ Song titles are the actual song that is closest to the generated song in the lat
 
 **5. Issues**
 
-Several of the original songs were played with multiple instruments and are very complex. When getting the piano roll matricies, they were very "noisy" and the network learned a lot of this noise instead of the main chords and the melody. This can be heard in the generated songs where there seem to be too many notes being played.</br>
+Several of the original songs were played with multiple instruments and are very complex. When getting the piano roll matricies, they were very "noisy" and the network learned a lot of this noise instead of the main chords and the melody. This can be heard in the generated songs where they seem to be a bit too cluttered with notes.</br>
 Additonally, When preprocessing the piano rolls, I chose to binarize the notes so note volume was not preserved. Instead, all notes are played at the same volume.
