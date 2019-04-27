@@ -38,3 +38,6 @@ Once the network has learned to recreate the original midis with a decent amount
 Some randomly generated songs: https://gippoo.github.io/music/</br>
 Song titles are the actual song that is closest to the generated song in the latent space.
 
+**5. Issues**
+One issue is that several of the original songs were played with multiple instruments so there are many separate tracks layered on top of each other. Instruments like drums which are played quickly and repeatedly throughout a song are picked up by the network which sort of takes away from the song when played in piano.</br>
+When preprocessing the piano rolls, I chose to binarize the notes so note volume was not preserved. Instead, all notes are played at the same volume.
