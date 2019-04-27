@@ -1,7 +1,7 @@
 # music
 
 ## Goal:
-Train a neural network to generate music in the likeness of some of my rpg games.
+Train a neural network to generate music in the likeness of some of my favorite rpg games.
 
 ## Method:
 **1. Obtain Dataset**
