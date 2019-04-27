@@ -29,6 +29,7 @@ Less nodes in each layer as well as a smaller latent space.
 Once the network has learned to recreate the original midis, the encoder portion of the network was thrown away. The decoder can then be used to turn random noise into something that <i>hopefully</i> sounds okay.
 
 **4. Results**
+
 Some randomly generated songs: https://soundcloud.com/gippooo/sets/neural-network-music/s-erPJb</br>
 Song titles are the actual song that is closest to the generated song in the latent space.
 
