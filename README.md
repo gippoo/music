@@ -30,6 +30,6 @@ Once the network has learned to recreate the original midis, the encoder portion
 
 **4. Results**
 
-Some randomly generated songs: https://soundcloud.com/gippooo/sets/neural-network-music/s-erPJb</br>
+Some randomly generated songs: https://gippoo.github.io/music/</br>
 Song titles are the actual song that is closest to the generated song in the latent space.
 
