@@ -1,5 +1,7 @@
 # music
 
+Python code to be posted.
+
 ## Goal:
 Train a neural network to generate music in the likeness of some of my favorite rpg games.
 
