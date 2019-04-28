@@ -8,6 +8,7 @@ Train a neural network to generate anime style music.
 
 ## Method:
 **1. Obtain Dataset**
+
 Downloaded 92 piano midis from various sites such as https://ichigos.com/ and http://josh.agarrado.net/music/anime/index.php</br>
 
 Used pypianoroll (https://salu133445.github.io/pypianoroll/index.html) to convert midis into a piano roll matrix.</br>
