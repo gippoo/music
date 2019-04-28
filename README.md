@@ -1,6 +1,6 @@
 # music
 
-Python code to be posted.
+Python code to be posted after cleaning it up.
 
 ## Goal:
 Train a neural network to generate anime style music.
