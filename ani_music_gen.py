@@ -145,6 +145,8 @@ autoencoder.fit(x, x, epochs=epochs, shuffle=True, batch_size=batch_size)
 
 # Function to find the most similar song
 songvecs = encoder([x])
+
+
 def closest_song(noise_vec):
     ix = 0
     smallest_dist = 100000
