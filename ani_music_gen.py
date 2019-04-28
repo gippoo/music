@@ -100,9 +100,7 @@ x, parts = preprocess_prolls(x)
 
 # Build and train the model
 from keras.models import Model
-from keras.layers import Dense, Input, Reshape, Flatten, BatchNormalization
-from keras.layers import Dropout
-from keras.layers import TimeDistributed, Activation
+from keras.layers import Dense, Input, Reshape, Flatten, BatchNormalization, Dropout, TimeDistributed, Activation
 from keras import backend as K
 
 input_song = Input(shape=x.shape[1:])
