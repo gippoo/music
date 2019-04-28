@@ -1,6 +1,7 @@
 # music
 
-Python code to be posted after cleaning it up.
+Python code:</br>
+https://github.com/gippoo/music/blob/master/ani_music_gen.py
 
 ## Goal:
 Train a neural network to generate anime style music.
