@@ -30,4 +30,5 @@ Once the network has learned to recreate the original midis with a decent amount
 
 Some randomly generated songs: https://gippoo.github.io/music/</br>
 Song titles are the actual song that is closest to the generated song in the latent space.</br>
-Pretty decent considering the small amount of songs used to train the network.
+There is probably a lot of overfitting going on considering the small amount of songs used to train the network.</br>
+Despite this, the generated songs are still reasonably different from their nearest original.
