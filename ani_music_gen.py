@@ -28,6 +28,7 @@ def parse_midis():
 
 # For shorter songs, we pad the piano rolls with 0's until the desired length
 def pad_piano_rolls(midis):
+    # Indexing so we can track which songs are being padded
     ix = 0
     
     for midi in midis:
@@ -135,6 +136,7 @@ autoencoder = Model(input_song, q)
 
 autoencoder.compile(optimizer='rmsprop', loss='binary_crossentropy')
 
+# Defining the encoder and decoder portions of the network
 decoder = K.function([autoencoder.get_layer('decoder').input], [autoencoder.layers[-1].output])
 encoder = K.function([autoencoder.layers[0].input], [autoencoder.get_layer('encoded').output])
 
