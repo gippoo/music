@@ -29,12 +29,15 @@ def parse_midis():
 # For shorter songs, we pad the piano rolls with 0's until the desired length
 def pad_piano_rolls(midis):
     ix = 0
+    
     for midi in midis:
         proll_len = midi.get_merged_pianoroll(mode='sum').shape[0]
+        
         if proll_len < pad_length:
             print("Padding " + os.listdir('./'+directory)[ix] + '...')
             print("Original Length: " + str(proll_len))
             midi.pad(pad_length - proll_len)
+            
         ix += 1
 
     return midis
@@ -75,8 +78,10 @@ def preprocess_prolls(piano_rolls):
     roll_count = 1
     for roll in piano_rolls:
         froll = []
+        
         for i in range(num_parts):
             froll.append(roll[i*seq_len:(i+1)*seq_len])
+        
         roll_count += 1
         final_rolls.append(froll)
 
@@ -145,12 +150,14 @@ def closest_song(noise_vec):
     ix = 0
     smallest_dist = 100000
     smallest_ix = 0
+    
     for i in songvecs[0]:
         d = np.sqrt(np.sum(np.square(i - noise_vec.reshape(latent_space))))
         if d < smallest_dist:
             smallest_dist = d
             smallest_ix = ix
         ix += 1
+        
     print('\nCLOSEST SONG: '+os.listdir('./'+directory)[smallest_ix])
     print(songvecs[0][smallest_ix])
     print('DISTANCE: '+str(smallest_dist))
@@ -172,11 +179,14 @@ def gen_song(tempo, title, plot_proll=False):
     print('\n GENERATING SONG...')
     noise = np.random.normal(0, 1, (1, latent_space))
     print(noise)
+    
     new_song = playnotes(np.array(decoder([noise])).reshape(parts*seq_len, 128))*100
     track = Track(new_song, name='test')
+    
     if plot_proll:
         track.plot()
         plt.show()
+        
     multitrack = Multitrack(tracks=[track], beat_resolution=beat_resolution, tempo=tempo)
     multitrack.write(title+'.mid')
     closest_song(noise)
