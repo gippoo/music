@@ -20,7 +20,9 @@ Autoencoder with the same structure as https://github.com/HackerPoet/Composer/bl
 Less nodes in each layer as well as a MUCH smaller latent space (8 dimensions).</br>
 The encoder portion of the network learns a way to represent the piano roll matrix of each song as a vector of 8 values.</br>
 In theory, each of the values should represent some feature of the songs. In practice, it is difficult to determine exactly what these learned features are.</br>
-The decoder portion then uses the 8 values to reconstruct the original song.
+The decoder portion then uses the 8 values to reconstruct the original song.</br>
+
+It is also worth trying a different model using LSTMs to determine the next most likely note(s) to play given a sequence of past notes.
 
 
 **3. Generating New Songs**
